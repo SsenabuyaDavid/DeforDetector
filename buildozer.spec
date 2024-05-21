@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.8.0,hostpython3==3.8.0,kivy,kivymd,requests,numpy,sounddevice,wavio,matplotlib,tensorflow,geopy,geocoder,jnius,plyer
+requirements = python3==3.10.12,kivy==2.3.0,hostpython3==3.10.12,kivymd,requests,numpy,sounddevice,wavio,tensorflow,geopy,geocoder,jnius,plyer
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.8.0
+osx.python_version = 3.10.12
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
