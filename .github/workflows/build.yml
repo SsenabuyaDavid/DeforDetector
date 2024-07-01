@@ -1,5 +1,4 @@
-name: Build Kivy App for Android
-
+name: CI
 on:
   push:
     branches: [ main ]
@@ -29,6 +28,9 @@ jobs:
           pip install --upgrade cython virtualenv buildozer
 
       - name: Set up Android SDK
+        env:
+          ANDROID_HOME: ${{ github.workspace }}/android-sdk
+          ANDROID_SDK_ROOT: ${{ github.workspace }}/android-sdk
         run: |
           mkdir -p $ANDROID_HOME/cmdline-tools
           curl -fo commandlinetools.zip https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip
